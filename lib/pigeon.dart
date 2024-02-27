@@ -1312,7 +1312,7 @@ class CameraInterface {
         message: 'Host platform returned null value for non-null return value.',
       );
     } else {
-      return (replyList[0] as double?)!;
+      return (double.parse('${replyList[0]}'));
     }
   }
 
